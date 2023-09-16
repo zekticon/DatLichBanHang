@@ -1,0 +1,27 @@
+.wrapper {
+    width: 240px;
+    height: 366px;
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    overflow-y: hidden;
+
+    .category-dropdown {
+    }
+
+    .row-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 14px;
+        color: #216daa;
+        font-size: 13px;
+        margin: 5px 0;
+        height: 23px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #e7f3fd;
+        }
+    }
+}

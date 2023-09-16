@@ -1,0 +1,152 @@
+.datatable {
+    height: 620px;
+    width: 100%;
+    padding: 20px;
+    font-size: 1.5rem !important;
+    position: relative;
+    .spinner-3 {
+        z-index: 1000;
+        position: absolute;
+        top: 50%; /* position the top  edge of the element at the middle of the parent */
+        left: 50%; /* position the left edge of the element at the middle of the parent */
+
+        margin-left: auto;
+        margin-right: auto;
+
+        text-align: center;
+        width: 50px;
+        padding: 8px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #25b09b;
+        --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+        -webkit-mask: var(--_m);
+        mask: var(--_m);
+        -webkit-mask-composite: source-out;
+        mask-composite: subtract;
+        animation: s3 1s infinite linear;
+    }
+    @keyframes s3 {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+    .spinner-4 {
+        z-index: 1000;
+        position: absolute;
+        top: 50%; /* position the top  edge of the element at the middle of the parent */
+        left: 50%; /* position the left edge of the element at the middle of the parent */
+
+        text-align: center;
+        width: 50px;
+        padding: 8px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #25b09b;
+        --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+        -webkit-mask: var(--_m);
+        mask: var(--_m);
+        -webkit-mask-composite: source-out;
+        mask-composite: subtract;
+        animation: s3 1s infinite linear;
+    }
+    @keyframes s3 {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+
+    .datatable-title {
+        width: 100%;
+        font-size: 24px;
+        color: gray;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .link {
+            color: green;
+            font-size: 16px;
+            font-weight: 400;
+            border: 1px solid green;
+            padding: 5px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+
+    .cellWithImg {
+        display: flex;
+        align-items: center;
+
+        .cellImg {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+    }
+    .status {
+        align-items: center;
+        .active {
+            display: flex;
+            justify-content: center;
+            padding-top: 2px;
+            border-radius: 5px;
+            background-color: rgb(37, 245, 172);
+        }
+        .process {
+            display: flex;
+            justify-content: center;
+            padding-top: 2px;
+            border-radius: 5px;
+            background-color: rgb(242, 193, 57);
+        }
+        .shipping {
+            display: flex;
+            justify-content: center;
+            width: fit-content;
+            padding-top: 2px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 5px;
+            color: aliceblue;
+            background-color: rgb(44, 114, 164);
+        }
+
+        .disable {
+            display: flex;
+            justify-content: center;
+            padding-top: 2px;
+            border-radius: 5px;
+            background-color: rgb(247, 56, 13);
+        }
+    }
+    .customTable {
+        font-size: 1.5rem !important;
+    }
+
+    .cell-action {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        .view-button {
+            cursor: pointer;
+            pad: 2px 5px;
+            border-radius: 5px;
+            color: darkblue;
+            border: 1px dotted rgba(0, 0, 139, 0.596);
+        }
+
+        .delete-button {
+            cursor: pointer;
+            pad: 2px 5px;
+            border-radius: 5px;
+            color: crimson;
+            border: 1px dotted rgba(228, 10, 10, 0.596);
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.continuous-1 {
+    margin-top: 19px;
+    width: 194px;
+    height: 148px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgb(214 214 214 / 7%) 33%, rgb(189 189 189 / 33%) 50%, rgb(170 160 160 / 7%) 66%)
+        #f2f2f2;
+    background-size: 300% 100%;
+    animation: ct1 1s infinite linear;
+    background-size: 300% 100%;
+    animation: ct1 1s infinite linear;
+}
+
+@keyframes ct1 {
+    0% {
+        background-position: right;
+    }
+}
+.continuous-2 {
+    width: 509px;
+    height: 341px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgb(214 214 214 / 7%) 33%, rgb(189 189 189 / 33%) 50%, rgb(170 160 160 / 7%) 66%)
+        #f2f2f2;
+    background-size: 300% 100%;
+    animation: ct1 1s infinite linear;
+    background-size: 300% 100%;
+    animation: ct2 1s infinite linear;
+}
+
+@keyframes ct2 {
+    0% {
+        background-position: right;
+    }
+}
+.continuous-3 {
+    width: 301px;
+    height: 372px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, rgb(214 214 214 / 7%) 33%, rgb(189 189 189 / 33%) 50%, rgb(170 160 160 / 7%) 66%)
+        #f2f2f2;
+    background-size: 300% 100%;
+    animation: ct1 1s infinite linear;
+    background-size: 300% 100%;
+    animation: ct3 1s infinite linear;
+}
+
+@keyframes ct3 {
+    0% {
+        background-position: right;
+    }
+}

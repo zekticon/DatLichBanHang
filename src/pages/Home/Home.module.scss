@@ -1,0 +1,135 @@
+.wrapper {
+    min-height: 1200px;
+
+    .nav-banner {
+        display: flex;
+        justify-content: space-between;
+        margin: 8px 0 0 0;
+        .side-bar {
+        }
+        .banner-left {
+            width: 545px;
+            height: 365px;
+        }
+        .banner-right {
+            width: 411px;
+            height: 364px;
+            border-radius: 10px;
+
+            .top {
+                display: flex;
+                cursor: pointer;
+                gap: 5px;
+                .img-left {
+                }
+                .img-right {
+                }
+            }
+            .bottom {
+                display: flex;
+                cursor: pointer;
+                gap: 5px;
+                .img-left {
+                }
+                .img-right {
+                }
+            }
+        }
+    }
+    .booking-schedules {
+    }
+    .banner-sale {
+        margin-top: 12px;
+
+        cursor: pointer;
+
+        img {
+            height: 100%;
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+    .banner-list {
+        margin-top: 12px;
+        width: 100%;
+        height: 259px;
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+            img {
+                cursor: pointer;
+                height: 100%;
+                width: 392px;
+                border-radius: 8px;
+            }
+        }
+    }
+    .banner-sale-2 {
+        width: 100%;
+        height: 164px;
+        margin: 12px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .left,
+        .right {
+            img {
+                cursor: pointer;
+                border-radius: 8px;
+                width: 595px;
+                height: 164px;
+            }
+        }
+    }
+    .banner-sale-3 {
+        display: flex;
+        justify-content: space-between;
+        img {
+            cursor: pointer;
+
+            border-radius: 8px;
+            width: 392px;
+            height: 259px;
+        }
+    }
+    .banner-sale-4 {
+        display: flex;
+        justify-content: space-between;
+        img {
+            cursor: pointer;
+
+            border-radius: 8px;
+            width: 291px;
+            height: 192px;
+        }
+    }
+}
+
+//Mobile: width < 740px
+@media only screen and (max-width: 46.1875em) {
+    .wrapper {
+        .nav-banner {
+            .side-bar {
+                display: none;
+            }
+            .banner-left {
+            }
+            .banner-right {
+            }
+        }
+    }
+}
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+    .wrapper {
+        .nav-banner {
+            .side-bar {
+                display: none;
+            }
+            .banner-left {
+            }
+            .banner-right {
+            }
+        }
+    }
+}

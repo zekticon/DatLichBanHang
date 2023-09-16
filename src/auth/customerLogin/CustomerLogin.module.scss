@@ -1,0 +1,169 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    margin-top: 109px;
+    margin-bottom: 50px;
+
+    .form {
+        max-width: 430px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 6px;
+        background: #fff;
+        border-radius: 6px;
+
+        header {
+            font-size: 28px;
+            font-weight: 600;
+            color: #232836;
+            text-align: center;
+        }
+
+        form {
+            margin-top: 30px;
+
+            .field {
+                position: relative;
+                height: 50px;
+                width: 100%;
+                margin-top: 20px;
+                border-radius: 6px;
+
+                .spinner-3 {
+                    margin: 5px auto;
+
+                    text-align: center;
+                    width: 35px;
+                    padding: 5px;
+                    aspect-ratio: 1;
+                    border-radius: 50%;
+                    background: hsl(0, 0%, 75%);
+                    --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+                    -webkit-mask: var(--_m);
+                    mask: var(--_m);
+                    -webkit-mask-composite: source-out;
+                    mask-composite: subtract;
+                    animation: s3 1s infinite linear;
+                }
+                @keyframes s3 {
+                    to {
+                        transform: rotate(1turn);
+                    }
+                }
+
+                input,
+                button {
+                    height: 100%;
+                    width: 100%;
+                    border: none;
+                    font-size: 16px;
+                    font-weight: 400;
+                    border-radius: 6px;
+                }
+
+                button {
+                    color: #fff;
+                    background-color: #0171d3;
+                    transition: all 0.3s ease;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #016dcb;
+                    }
+                }
+
+                input {
+                    padding: 0 15px;
+                    border: 1px solid #cacaca;
+
+                    &:focus {
+                        border-bottom-width: 2px;
+                    }
+                }
+
+                .eye-icon {
+                    position: absolute;
+                    font-size: 18px;
+                    color: #8b8b8b;
+                    top: 50%;
+                    right: 10px;
+                    transform: translateY(-50%);
+                    cursor: pointer;
+                    // padding: 5px;
+                }
+            }
+            .form-link {
+                text-align: center;
+                margin-top: 10px;
+
+                .login-link {
+                    cursor: pointer;
+                    color: #0171d3;
+                }
+
+                span,
+                .login-link {
+                    font-size: 14px;
+                    font-weight: 400;
+                }
+
+                .login-link {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+        .line {
+            position: relative;
+            height: 1px;
+            width: 100%;
+            margin: 36px 0;
+            background-color: #d4d4d4;
+
+            &:before {
+                content: 'Or';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #fff;
+                color: #232836;
+                padding: 0 15px;
+            }
+        }
+        .media-options {
+            .google {
+                position: relative;
+                display: flex;
+                height: 50px;
+                width: 100%;
+                margin-top: 20px;
+                border-radius: 6px;
+                align-items: center;
+                justify-content: center;
+                background-color: white;
+                color: #0171d3;
+                border: 1px solid #cacaca;
+
+                .google-icon {
+                    height: 28px;
+                    color: red;
+                    width: 28px;
+                    position: absolute;
+                    top: 50%;
+                    left: 15px;
+                    transform: translateY(-50%);
+                }
+                span {
+                    font-weight: 500;
+                    opacity: 0.6;
+                    color: #232836;
+                }
+            }
+        }
+    }
+}

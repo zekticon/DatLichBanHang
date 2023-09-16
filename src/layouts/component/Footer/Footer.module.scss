@@ -1,0 +1,86 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .inner {
+        width: var(--default-layout-width);
+        height: 324px;
+        padding: 18px 0;
+        .top {
+            display: flex;
+            justify-content: space-between;
+            .footer-col-l,
+            .footer-col-m {
+                p {
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    font-size: 13px;
+                    padding: 3px 0;
+                    color: #155383;
+                }
+
+                ul li {
+                    list-style: none;
+                    font-size: 15px;
+                    display: block;
+                    color: #808089;
+                    margin: 10px 0;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: #188aeb;
+                    }
+                }
+                .connect {
+                    display: flex;
+                    gap: 10px;
+
+                    .icon {
+                        width: 32px;
+                        height: 32px;
+                        border: 0.5px solid;
+                        border-radius: 4px;
+                    }
+                }
+            }
+
+            .footer-col-m {
+                width: 357px;
+
+                ul li {
+                    list-style: none;
+                    font-size: 15px;
+                    display: block;
+                    color: #808089;
+                    margin: 7px 0;
+                }
+
+                span {
+                    font-weight: bold;
+                    color: black;
+                }
+                .logo {
+                    img {
+                        width: 130px;
+                        height: 49px;
+                    }
+                }
+            }
+        }
+    }
+    .bottom {
+        background-color: #e7e7ec;
+        font-size: 12px;
+        line-height: 14px;
+        width: 100%;
+        padding: 12px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

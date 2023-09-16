@@ -1,0 +1,121 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+
+    .close {
+        cursor: pointer;
+        padding: 0px 12px;
+        border-radius: 11px;
+        font-weight: 600;
+
+        &:hover {
+            background-color: azure;
+        }
+    }
+}
+.top,
+.bottom {
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    position: relative;
+
+    .spinner-3 {
+        z-index: 1000;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        width: 50px;
+        padding: 8px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        background: #25b09b;
+        --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
+        -webkit-mask: var(--_m);
+        mask: var(--_m);
+        -webkit-mask-composite: source-out;
+        mask-composite: subtract;
+        animation: s3 1s infinite linear;
+    }
+    @keyframes s3 {
+        to {
+            transform: rotate(1turn);
+        }
+    }
+
+    h1 {
+        color: lightgray;
+        font-size: 20px;
+    }
+    .left {
+        flex: 1;
+        text-align: center;
+
+        img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+    }
+
+    .right {
+        flex: 2;
+
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-around;
+
+            .form-input {
+                width: 40%;
+
+                label {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    .icon {
+                        cursor: pointer;
+                    }
+                }
+
+                input {
+                    width: 100%;
+                    padding: 5px;
+                    border: none;
+                    border-bottom: 1px solid gray;
+                }
+                select {
+                    border: 1px solid;
+                    border-radius: 5px;
+                    outline: none;
+
+                    option {
+                        border-top: none;
+                        border: 1px solid;
+                    }
+                }
+            }
+
+            .btnSave {
+                display: flex;
+                justify-content: center;
+                width: 150px;
+                align-items: center;
+                padding: 10px;
+                border: none;
+                background-color: teal;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+        }
+    }
+}
